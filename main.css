@@ -8,11 +8,13 @@
     --white: white;
     --orange: rgb(247, 129, 51);
     --orange2: rgb(252, 120, 43);
+    --transparent: rgba(247, 251, 252, 0.87);
 }
 
 #icono {
     border: var(--rose) solid 2px;
     border-radius: 50%!important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
 }
 
 #content {
@@ -29,6 +31,10 @@
 .list {
     background-color: var(--dark-violet)!important;
     color: var(--aqua-marine)!important;
+}
+
+#menu li a {
+    color: var(--white)!important;
 }
 
 #menu li a:hover {
@@ -89,17 +95,43 @@
     padding: 10px 15px;
     border-radius: 10px;
     margin-left: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
 }
 
 #button-contact:hover {
     background-color: var(--white);
     color: var(--rose);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+
+.about {
+    
+    border-bottom-right-radius: 50%;
+    background-color: transparent;
+    color: var(--white)!important;
+    text-align: justify!important;
+}
+
+.space-photo {
+    display: none;
+    
+}
+
+#foto-box {
+    margin: 5px;
+}
+
+#foto {
+    border-radius: 10%!important;
+
+    object-fit: cover;
 }
 
 /* </--MENU HAMBURGUESA--> */
 
 
 /* </-- PROJECT-BOX --> */
+
 
 
 .project-box {
@@ -182,11 +214,43 @@
     #icono {
         display: none;
     }
+
+    .about {
+        border-bottom-right-radius: 0;
+    }
+
+    .space-photo {
+        display: none;
+        
+    }
+
+
 }
 
 @media screen and (max-width:1023px) {
     #icono {
         display: none;
+    }
+
+
+
+    .about {
+        border: none!important;
+        border-bottom-right-radius: 0;
+    }
+
+    #foto-box {
+        margin: 0;
+    }
+
+    #foto {
+        border-radius: 0%!important;
+        object-fit: cover;
+    }
+
+    .space-photo {
+        display: none;
+        
     }
 
     #line {
