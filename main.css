@@ -1,13 +1,13 @@
 :root {
     --violet: blueviolet;
     --purple: #9a00bf;
-    --rose: rgb(244 63 94);
-    --dark-blue: rgb(16, 70, 105);
+    --rose: #f43f5e;
+    --dark-blue: #104669;
     --aqua-marine: #6ee7b7;
-    --dark-violet: rgb(99 102 241);
+    --dark-violet: #6366f1;
     --white: white;
-    --orange: rgb(247, 129, 51);
-    --orange2: rgb(252, 120, 43);
+    --orange: #f78133;
+    --orange2: #fc782b;
     --transparent: rgba(247, 251, 252, 0.87);
 }
 
@@ -197,6 +197,10 @@
 .bootstrap {
     background-color: var(--white);
     color: var(--dark-violet)!important;
+}
+
+.react {
+    background-color: black;
 }
 
 
