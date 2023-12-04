@@ -1,264 +1,144 @@
 :root {
-    --violet: blueviolet;
-    --purple: #9a00bf;
-    --rose: #f43f5e;
-    --dark-blue: #104669;
-    --aqua-marine: #6ee7b7;
-    --dark-violet: #6366f1;
-    --white: white;
-    --orange: #f78133;
-    --orange2: #fc782b;
-    --transparent: rgba(247, 251, 252, 0.87);
+    --black: #000000;
+    --darkest-green: #0d2818;
+    --darkgreen: #020202;
+    --gold: #ffd700;
+    --transparentGold: rgba(255, 217, 0, 0.5);
+    --gray: #999;
+    --green: #16db65;
+    --green-transparent: rgba(22, 218, 100, 0.5);
+    --green-semioscuro: #058642;
+    --green-oscuro: #04471c;
+    --hospital-green: #ACD9B2;
+    --transparentWhite: rgba(247, 251, 252, 0.87);
+    --very-light-pink: #C7C7C7; 
+    --white: #ffffff;   
 }
 
-#icono {
-    border: var(--rose) solid 2px;
-    border-radius: 50%!important;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
-}
-
-#content {
-    border: var(--violet) solid 1px;
-    padding: 5px;
-    background-color: var(--dark-blue);
-    border-radius: 10%;
-}
-
-#projects {
-    color: var(--aquamarine);
-}
-
-.list {
-    background-color: var(--dark-violet)!important;
-    color: var(--aqua-marine)!important;
-}
-
-#menu li a {
-    color: var(--white)!important;
-}
-
-#menu li a:hover {
-    color: var(--rose)!important;
-}
-
-
-.footer {
-    background: var(--white);
-}
-
-/*MENU HAMBURGUESA*/
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
-.bars__menu {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(6);
-    cursor: pointer;
-    display:none;
+body {
+    background: linear-gradient(to right, var(--white), var(--hospital-green));
 }
 
-.bars__menu span {
-    display: block;
-    width: 100%;
-    height: 2px;
-    background: var(--purple);
-    border-radius: 10px;
-    margin-top: 6px;
-    transform-origin: 0px 100%;
-    transition: all 300ms;
-}
-
-.activeline1__bars-menu {
-    transform: rotate(45deg) translate (-2px, 1px);
-}
-
-.activeline2__bars-menu {
-    opacity: 0;
-    margin-left: -30px;
-}
-
-.activeline3__bars-menu {
-    transform: rotate(-45deg) translate (-4px, 2px);
-}
-
-#button-contact {
-    background-color: var(--rose);
-    color: var(--white);
-    padding: 10px 15px;
-    border-radius: 10px;
-    margin-left: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
-}
-
-#button-contact:hover {
-    background-color: var(--white);
-    color: var(--rose);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
-}
-
-.about {
-    
-    border-bottom-right-radius: 50%;
-    background-color: transparent;
-    color: var(--white)!important;
-    text-align: justify!important;
-}
-
-.space-photo {
+.inactive {
     display: none;
-    
 }
 
-#foto-box {
-    margin: 5px;
-}
-
-#foto {
-    border-radius: 10%!important;
-
-    object-fit: cover;
-}
-
-/* </--MENU HAMBURGUESA--> */
-
-
-/* </-- PROJECT-BOX --> */
-
-
-
-.project-box {
-    background-color: rgba(20, 203, 216, 0.3);
-    width: 100%;
-    height: 100%;
-    box-shadow: 0 5px 7px rgba(0, 0, 0, .3);
-    padding: 15px 20px;
-    border-radius: 20px;
-    border: solid 1px var(--white);
+#presentation {
+    display: flex;
     align-items: center;
 }
 
-.container h2 {
-    color: var(--rose);
-    text-shadow: 0 5px 7px rgba(0, 0, 0, .6);
+.greeting {
+    font-size: 3rem;
 }
 
-.badge {
-    margin-top: 10px;
-}
-
-.project-box h5 {
-    margin-top: 20px;
-    color: black;
+.my-name {
+    text-shadow: 0 2px 5px rgba(0, 0, 0, .9);
     margin-bottom: 10px;
+    font-size: 5rem;
+}
+
+#about {
+    height: 100%;
+    width: 100%;
+}
+
+#profession {
+    text-shadow: 0 2px 5px rgba(0, 0, 0, .9);
+    margin-top: 10px;
+    top: 10px;
+    font-size: 2rem;
+    color: var(--gold);
+}
+
+.buttonContact {    
+    margin-top: 1rem;
+}
+
+.biography {
     font-size: 20px;
+    color: var(--black);
 }
 
-.project-box:hover {
-    transform: scale(1.1);
-    transform-origin: center;
+#photo-box {
+    width: 25rem;
+    height: 25rem;
 }
 
-.project-box .description {
-    color: gray;
-    font-size: 14px;
+#photo {
+    object-fit: cover;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;   
 }
-
-.project-box a {
-    text-decoration-line: underline;
-    color: rgb(80, 168, 219);
-    text-align: center;
-    font-size: 12px;
-}
-
-.project-box a:hover {
-    color: var(--dark-violet);
-}
-
-.javascript {
-    background-color: var(--orange);
-}
-
-.css {
-    background-color: var(--rose);
-}
-
-.html {
-    background-color: var(--dark-violet);
-}
-
-.bootstrap {
-    background-color: var(--white);
-    color: var(--dark-violet)!important;
-}
-
-.react {
-    background-color: black;
-}
-
-
-
-.icon-social-media:hover {
-    color: var(--white)!important;
-    background-color: var(--white);
-    border-radius: 20%;
-    align-items: center;
-}
-
-
 
 @media screen and (max-width:580px) {
-    #icono {
-        display: none;
+    #presentation {
+        display: flex;
+        flex-direction: column;
     }
 
-    .about {
-        border-bottom-right-radius: 0;
+    .about #photo {
+        width: 100%;
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
     }
 
-    .space-photo {
-        display: none;
-        
+    .greeting {
+        font-size: 2rem;
     }
 
+    .my-name {
+        font-size: 3rem;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        bottom: 0;
+    }
 
+    #profession {
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: 1.5rem;
+        top: 0;
+    }
+
+    .buttonContact {
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+
+    .biography {
+        font-size: 1rem;
+        top: 0;
+        margin-top: 0;
+    }
+
+    #photo-box {
+        width: 15rem;
+        height: 15rem;
+    }
 }
 
-@media screen and (max-width:1023px) {
-    #icono {
-        display: none;
+@media screen and (min-width:581px) and (max-width: 1024px) {
+    #presentation {
+        display: flex;
+        flex-direction: column;
     }
 
-
-
-    .about {
-        border: none!important;
-        border-bottom-right-radius: 0;
+    .about #photo {
+        width: 100%;
     }
 
-    #foto-box {
-        margin: 0;
+    #photo-box {
+        height: 22rem;
+        width: 20rem;
+        justify-content: center;
+        align-items: center;
     }
-
-    #foto {
-        border-radius: 0%!important;
-        object-fit: cover;
-    }
-
-    .space-photo {
-        display: none;
-        
-    }
-
-    #line {
-        display: none;
-    }
-
 }

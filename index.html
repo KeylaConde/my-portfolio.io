@@ -1,256 +1,237 @@
-<!doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./main.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./projects.css">
+    <link rel="stylesheet" href="./form.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
 </head>
+<body>
+    <!--HEADER-->
+    <header>
+        <nav>
+            <div class="navbar-left">
+                <img id="logo" src="./image/loguito.png" alt="logo">
+                <ul>
+                    <li><a href="#presentation">About me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#footerContact">Contact</a></li>
+                  </ul>
+            </div>
 
-<body class="">
-
-  <div class="relative bg- overflow-hidden">
-    <div id="marco" class="max-w-7xl mx-auto">
-      <div class="about relative z-10 pb-8 bg-gradient-to-l from-blue-900 to-black sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32"> <!--bg-gradient-to-l from-blue-900 to-black-->
-        <!--svg id="line" class="space-photo hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
-          fill="currentColor" viewBox="0 0 20 20" preserveAspectRatio="none" aria-hidden="true"> <!--viewBox="0 0 20 20"-->
-          <!--polygon points="50,0 100,0 0,100 0,0" /> <!--points="50,0 100,0 50,100 0,100"-->
-        </!--svg-->
-        <div>
-          <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
-
-            <nav class="navbar navbar-expand-lg relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
-              <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
-                <div class="flex items-center justify-between w-full md:w-auto">
-                  <a class="navbar-brand" href="#">
-                    <button class="" type="button" data-bs-toggle="collapse">
-                      <span class="sr-only navbar-toggler-icon">Keyla Conde CV</span>
-                    <img id="icono" class="mt-3 h-8 w-auto sm:h-20" src="./image/c.png">
-                    </button>
-                  </a>
-                </div>
-              </div>
-
-              <!--MENU HAMBURGESA-->
-
-              <div class="bars__menu">
-                <span class="line1__bars-menu"></span>
-                <span class="line2__bars-menu"></span>
-                <span class="line3__bars-menu"></span>
-             </div>
-
-             <!--/MENU HAMBURGUESA-->
-
-              <div id="menu" class="navbar-collapse m-4 md:ml-10 md:pr-4 md:space-x-8 hidden" id="navbarSupportedContent"> <!--hidden md:block md:ml-10 md:pr-4 md:space-x-8 m-4-->
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a href="https://drive.google.com/file/d/1nfGlX3mZnjCUzd3b7a8U7PwHtZ787Gdp/view?usp=drive_link" class="nav-link font-medium text-white hover:text-rose-500"><strong>About Me</strong>
-                  </a>
-                </li>
-                  <li class="nav-item dropdown">
-                    <a href="#" id="projects" class="nav-link dropdown-toogle font-medium text-white hover:text-white" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <strong>Projects</strong>
-                    </a>
-                    <ul class="list dropdown-menu">
-                      <li>
-                        <a class="list dropdown-item" href="#santiagroquimicos"><strong>SANTIAGROQUIMICOS Store</strong></a>
-                      </li>
-                      <li>
-                        <a class="list dropdown-item" href="#movie-mania"><strong>MOVIE MANIA</strong></a>
-                      </li>
-                      <li>
-                        <a class="list dropdown-item" href="#dynamic-form"><strong>DYNAMIC FORM</strong></a> 
-                      </li>
-                      <li>
-                        <a class="list dropdown-item" href="#task-track"><strong>TASK TRACK</strong></a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                   
-                    <a href="https://wa.me/573158643093?text="><button id="button-contact" class="button">
-                      <strong>Contact me!</strong>
-                    </button></a>
-                    
-
-  
-                  </li>
+            <div class="navbar-right">
+                <ul>
+                    <li class="navbar-email">
+                        <a href="mailto:keycoder.data@gmail.com">keycoder.data@gmail.com</a>
+                    </li>
+                    <li class="navbar-menuIcon">
+                        <img class="iconMenu" src="./image/icon_menu.svg" alt="hamburguer-icon">
+                    </li>
                 </ul>
-              </div>
+            </div>
 
-            </nav>
-          </div>
+            <div class="mobileMenu inactive">
+                <ul>
+                    <li class="text-center"><a href="#presentation">About me</a></li>
+                    <li class="text-center"><a href="#projects">Projects</a></li>
+                    <li class="text-center"><a href="#footerContact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--/HEADER-->
+
+    <!--PRESENTATION-->
+    <div id="presentation" class="overflow-hidden container-fluid bg-transparent">
+        <div class="row bg-transparent">
+            <div id="about" class="col col-lg-6 col-md-12 bg-transparent w-100">
+                <main class="mt-10 px-4 max-w-7xl">
+                    <div class="lg:text-left">
+                        <h1 class="font-extrabold">      
+                            <span class="greeting text-gray-400 sm:inline xl:inline">
+                                Hello, World!, I'm 
+                            </span><br>
+                            <span class="my-name bg-clip-text text-black sm:inline xl:inline">Keyla </span><span class="my-name text-green-500 sm:inline xl:inline">Conde</span><br>
+                        </h1>
+                        <span id="profession" class="bg-clip-text font-extrabold xl:inline">Frontend Developer</span><br>
+                        <button class="buttonContact">
+                            <a class="btn btn-success" href="https://wa.me/573158643093?text=Hola,%20Keyla!">Contact me</a>
+                        </button>
+                        <p id="biography" class="biography mt-5">
+                            I'm a self-taugh Frontend Developer, passionated for about creating 
+                            user experiences through code. I have independent experience with tools 
+                            such as HTML, CSS, JS, Bootstrap, Tailwinds, React as well as knowledge 
+                            in Python, C++, Java and others.
+                        </p>
+                    </div>
+                </main>
+            </div>
         </div>
+    
+        <div id="photo-box" class="col col-lg-6 col-md-12 bg-transparent">
+            <img id="photo" class="h-200 w-auto sm:h-auto sm:w-auto" src="./image/nitida.png" alt="my_photo">
+        </div>
+    </div>
+    <!--/PRESENTATION-->
 
+      <!--MAIN PROJECTS-->
+    <section id="projects" class="mt-4 mb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center text-uppercase">
+                    <small class="text-lg">These are my</small>
+                    <strong>
+                        <h2 class="mt-2">
+                            Projects
+                        </h2>
+                    </strong>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-12 col-lg-3 col-md-6 mb-4">
+                    <div class="project-box">
+                        <div class="text-end">
+                            <span class="badge html">HTML</span>
+                            <span class="badge css">CSS</span>
+                            <span class="badge bootstrap">Bootstrap</span>
+                        </div>
+                    <h5><strong>Santiagroquímicos Store</strong></h5>
+                    <p class="description">
+                        Santiagroquimicos is a virtual store dedicated to providing an exceptional shopping experience.
+                        You can explore it.
+                    </p>
+                    <a href="https://keylaconde.github.io/productos-naturales.io/#">Ver más...</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-3 col-md-6 mb-4">
+                    <div class="project-box">
+                        <div class="text-end">
+                            <span class="badge html">HTML</span>
+                            <span class="badge css">CSS</span>
+                            <span class="badge javascript">JavaScript</span>
+                        </div>                   
+                    <h5><strong>Movie Mania</strong></h5>
+                    <p class="description">
+                        Welcome to "Movie Mania", your one-stop online destination for everything related to movies, series, novels and children!
+                        I invite you to look at this project.
+                    </p>
+                    <a href="https://keylaconde.github.io/cinefilos.io/">Ver más...
+                    </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6 mb-4">
+                    <div class="project-box">
+                        <div class="text-end">
+                            <span class="badge html">HTML</span>
+                            <span class="badge css">CSS</span>
+                            <span class="badge javascript">JavaScript</span>
+                        </div>                   
+                    <h5><strong>Dynamic Form</strong></h5>
+                    <p class="description">
+                        Imagine a versatile and responsive data entry form that adapts to your needs.
+               It offers a user-friendly and intuitive experience for login and regiter in web pages.
+                    </p>
+                    <a href="https://keylaconde.github.io/dynamic-form/">Ver más...
+                    </a>
+                    </div>  
+                </div>
+
+                <div class="col-12 col-lg-3 col-md-6 mb-4">
+                    <div class="project-box">
+                        <div class="text-end">
+                            <span class="badge html">HTML</span>
+                            <span class="badge css">CSS</span>
+                            <span class="badge react">React</span>
+                        </div>
+                    <h5><strong>Task Track</strong></h5>
+                    <p class="description">
+                        Task Track is a sleek web app for efficient task management. 
+                        With a user-friendly interface, it lets you create, organize, and track tasks effortlessly. 
+                    </p>
+                    <a href="https://keylaconde.github.io/task-track/">Ver más...
+                    </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--/MAIN PROJECTS-->
+
+    <section class="form-content">
+      <div class="form">
+        <h2>Gracias por contactarme!</h2>
+        <form action="https://formsubmit.co/keycoder.data@gmail.com" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" name="email" required>
+          <label for="subject">Subject:</label>
+          <input type="text" name="subject">
+          <label for="coments">Message:</label>
+          <textarea name="coments" required cols="35" rows="5"></textarea>
   
-
-        <main id="about-me" class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-          <div class="sm:text-center lg:text-left">
-            <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-5xl">
-              <span class="block text-indigo-600 xl:inline">Hello World!, <br>I'm</span>
-              <span class="block bg-clip-text text-transparent bg-gradient-to-r from-sky-500 to-emerald-400 md:text-6xl xl:inline">Keyla Conde</span><br>
-              <span class="block bg-clip-text text-transparent bg-gradient-to-r from-rose-500 to-orange-400 xl:inline text-3xl">Frontend Developer</span>
-            </h1>
-
-            <p
-              class="biography mt-3 text-base text- sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-              A motivated Frontend Developer with skills to create responsive and user-friendly websites and
-            applications using HTML, CSS, Python and JavaScript. I can also build interfaces with tools like 
-          Bootstrap and Tailwinds; and control the versions of my projects with Git and Git-Hub.</p>
-
-
-          </div>
-        </main>
+          <input class="btn-send" type="submit" value="Enviar">
+        </form>
       </div>
-    </div>
+    </section>
 
-    <div id="foto-box" class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-      <img id="foto" class="h-72 w-full object-cover sm:h-96 md:h-full md:w-full lg:w-full lg:h-full"
-        src="./image/miFoto.png" alt="mi foto">
-    </div>
+    <!--FOOTER-->
+    <div class="footer">
+        <div class="py-12 px-4 lg:py-10 lg:px-8 lg:flex lg:items-center lg:justify-between">
+            <h2 id="footerContact" class="font-extrabold tracking-tight">
+               <span class="block text-4xl">Contact</span> 
+               <span class="block bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-yellow-400 text-4xl">Keep in touch.</span>
+            </h2>
 
-  </div>
-
-
-  <!-- Projects -->
-
-  <section class="mt-4 mb-4">
-    <div  class="container">
-      <div  class="row">
-        <div class="col text-center text-uppercase">
-          <small class="text-lg">These are my</small>
-          <strong><h2 class="mt-2 mb-4 text-5xl">Projects</h2></strong>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-
-          
-          <div id="santiagroquimicos" class="project-box">
-            <div class="text-end">
-            <span class="badge html">HTML</span>
-            <span class="badge css">CSS</span>
-            <span class="badge bootstrap">Bootstrap</span>
+            <div class="mt-8 flex lg:flex-shrink-0">
+                <a class="icon-social-media" href="https://wa.me/573158643093?text=Hola,%20Keyla!">
+                    <svg class="ml-2 mr-2" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1_2)">
+                        <path d="M25.8982 20.1115C25.83 20.0788 23.2784 18.8223 22.825 18.6591C22.6399 18.5927 22.4416 18.5278 22.2307 18.5278C21.8862 18.5278 21.5967 18.6994 21.3712 19.0367C21.1164 19.4156 20.3448 20.3175 20.1063 20.5869C20.0752 20.6225 20.0328 20.665 20.0072 20.665C19.9844 20.665 19.5896 20.5024 19.47 20.4505C16.7328 19.2615 14.6552 16.4023 14.3703 15.9201C14.3297 15.8508 14.328 15.8193 14.3276 15.8193C14.3376 15.7826 14.4296 15.6904 14.4772 15.6427C14.6161 15.5052 14.7667 15.324 14.9124 15.1487C14.9814 15.0656 15.0504 14.9824 15.1183 14.904C15.3296 14.6581 15.4238 14.4672 15.5329 14.246L15.59 14.1312C15.8564 13.6019 15.6289 13.1553 15.5553 13.0112C15.495 12.8905 14.4176 10.2902 14.303 10.0171C14.0276 9.35783 13.6636 9.05093 13.1578 9.05093C13.1109 9.05093 13.1578 9.05093 12.961 9.05924C12.7213 9.0693 11.4163 9.24117 10.8392 9.60487C10.2273 9.99068 9.19202 11.2205 9.19202 13.3832C9.19202 15.3296 10.4273 17.1675 10.9576 17.8665C10.9708 17.8841 10.995 17.9199 11.0301 17.9713C13.0611 20.9374 15.5931 23.1356 18.1597 24.1609C20.6308 25.1479 21.8009 25.2621 22.4661 25.2621C22.7456 25.2621 22.9696 25.2401 23.1669 25.2207L23.2921 25.2087C24.1458 25.1331 26.0217 24.161 26.4484 22.9752C26.7846 22.0412 26.8731 21.0208 26.6495 20.6504C26.4964 20.3987 26.2324 20.2719 25.8982 20.1115Z" fill="#04471c"/>
+                        <path d="M17.8106 0C8.33153 0 0.619746 7.65384 0.619746 17.0617C0.619746 20.1045 1.43407 23.0831 2.97668 25.6899L0.0240645 34.3995C-0.0309355 34.5619 0.00997362 34.7415 0.130087 34.8637C0.216791 34.9522 0.334405 35 0.454519 35C0.500542 35 0.546906 34.9931 0.592133 34.9786L9.67393 32.0927C12.1591 33.4206 14.968 34.1215 17.8108 34.1215C27.2889 34.1216 35 26.4685 35 17.0617C35 7.65384 27.2889 0 17.8106 0ZM17.8106 30.5675C15.1358 30.5675 12.5449 29.7951 10.3179 28.3337C10.243 28.2845 10.1561 28.2593 10.0686 28.2593C10.0223 28.2593 9.97602 28.2664 9.93089 28.2807L5.38145 29.7268L6.85008 25.394C6.89759 25.2537 6.87384 25.0991 6.78634 24.9796C5.09043 22.6623 4.19395 19.9244 4.19395 17.0617C4.19395 9.61362 10.3024 3.55409 17.8106 3.55409C25.3178 3.55409 31.4256 9.61362 31.4256 17.0617C31.4256 24.5089 25.3181 30.5675 17.8106 30.5675Z" fill="#04471c"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_1_2">
+                        <rect width="35" height="35" fill="#04471c"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+                <a class="icon-social-media" href="https://www.linkedin.com/in/keyla-carolina-conde-sánchez-32671a205">
+                    <svg class="ml-2 mr-2" width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M28.2504 0.865696H2.38728C1.14939 0.865696 0.145439 1.8457 0.145439 3.0535V29.2194C0.145439 30.4266 1.14939 31.4066 2.38728 31.4066H28.2504C29.4902 31.4066 30.4941 30.426 30.4941 29.2194V3.0535C30.4941 1.84508 29.4896 0.865696 28.2504 0.865696ZM9.3443 26.4323H4.76053V12.6417H9.3443V26.4323ZM7.05272 10.7578H7.02202C5.48447 10.7578 4.48974 9.6986 4.48974 8.37535C4.48974 7.02263 5.51518 5.99289 7.08281 5.99289C8.65105 5.99289 9.6157 7.02263 9.6464 8.37535C9.6464 9.6986 8.65044 10.7578 7.05272 10.7578ZM25.8735 26.4323H21.2897V19.0528C21.2897 17.1996 20.6266 15.9347 18.9681 15.9347C17.7019 15.9347 16.9479 16.7876 16.6157 17.6117C16.4947 17.9058 16.4653 18.3172 16.4653 18.7298V26.4317H11.8815C11.8815 26.4317 11.9417 13.9336 11.8815 12.6411H16.4653V14.5931C17.0744 13.6536 18.1637 12.3156 20.5971 12.3156C23.6126 12.3156 25.8741 14.2873 25.8741 18.5235L25.8735 26.4323Z" fill="#04471c"/>
+                        </svg>
+                </a>
+                <a href="https://www.github.com/KeylaConde">
+                    <svg class="ml-2" width="35" height="35" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_5_3)">
+                        <path d="M20.9765 0.23077C9.51886 0.23077 0.230774 9.66638 0.230774 21.3056C0.230774 31.1345 6.85418 39.3913 15.814 41.7222C15.808 39.2866 15.8002 36.2992 15.7956 35.3685C9.80883 36.6911 8.54565 32.7891 8.54565 32.7891C7.56692 30.2622 6.15621 29.5901 6.15621 29.5901C4.20335 28.2333 6.30327 28.261 6.30327 28.261C8.46405 28.415 9.6023 30.514 9.6023 30.514C11.5215 33.8559 14.6366 32.8896 15.8647 32.3313C16.0579 30.9187 16.6153 29.9538 17.2312 29.408C12.4514 28.8552 7.42631 26.9807 7.42631 18.6041C7.42631 16.2174 8.2672 14.2673 9.64379 12.7363C9.4202 12.1854 8.6835 9.96189 9.85217 6.95053C9.85217 6.95053 11.6594 6.3632 15.7716 9.19153C17.4884 8.707 19.3293 8.46405 21.1581 8.45575C22.987 8.46405 24.8292 8.707 26.5492 9.19153C30.6569 6.3632 32.4613 6.95053 32.4613 6.95053C33.6327 9.96189 32.896 12.1854 32.6724 12.7363C34.0523 14.2673 34.8872 16.2174 34.8872 18.6041C34.8872 27.001 29.8529 28.8492 25.0606 29.3909C25.8324 30.0695 26.5202 31.3996 26.5202 33.4391C26.5202 35.0587 26.5128 38.7874 26.5059 41.6175C35.2776 39.1585 41.7222 30.999 41.7222 21.3056C41.7222 9.66638 32.4341 0.23077 20.9765 0.23077Z" fill="#04471c"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_5_3">
+                        <rect width="42" height="42" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>     
+                </a>
             </div>
-            <h5><strong>Santiagroquimicos Store</strong></h5>
-            <p class="description">Santiagroquimicos is a virtual store dedicated to providing an exceptional shopping experience.
-              You can explore it in the following link
-            </p>
-            <a href="https://keylaconde.github.io/productos-naturales.io/#">https://keylaconde.github.io/productos-naturales.io/#
-              </a>
-              
-          </div>
-       
         </div>
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div id="movie-mania" class="project-box">
-            <div class="text-end">
-            <span class="badge html">HTML</span>
-            <span class="badge css">CSS</span>
-            <span class="badge javascript">JavaScript</span>
-            </div>
-            <h5><strong>Movie Mania</strong></h5>
-            <p class="description">Welcome to "Movie Mania", your one-stop online destination for everything related to movies, series, novels and children!
-              I invite you to look at the link</p>
-            <a href="https://keylaconde.github.io/cinefilos.io/">https://keylaconde.github.io/cinefilos.io/
-            </a>
-          </div>
-        
-   
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div id="dynamic-form" class="project-box">
-            <div class="text-end">
-                <span class="badge html">HTML</span>
-                <span class="badge css">CSS</span>
-                <span class="badge javascript">JavaScript</span>
-            </div>
-            <h5><strong>Dynamic Form</strong></h5>
-            <p class="description">Imagine a versatile and responsive data entry form that adapts to your needs.
-               It offers a user-friendly and intuitive experience for login and regiter in web pages.</p>
-            <a href="https://keylaconde.github.io/dynamic-form/">https://keylaconde.github.io/dynamic-form/</a>
-          </div>
-     
-
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div id="task-track" class="project-box">
-            <div class="text-end">
-                <span class="badge html">HTML</span>
-                <span class="badge css">CSS</span>
-                <span class="badge react">React</span>
-            </div>
-            <h5><strong>Task Track</strong></h5>
-            <p class="description">Task Track is a sleek web app for efficient task management. 
-              With a user-friendly interface, it lets you create, organize, and track tasks effortlessly. </p>
-            <a href="https://keylaconde.github.io/task-track/">https://keylaconde.github.io/task-track/</a>
-          </div>
-     
-
-        </div>
-
-      </div>
     </div>
-  </section>
+    <!--/FOOTER-->
 
-  <!-- /projects -->
-
-  <div class="footer">
-    <div class="bg-gradient-to-l from-blue-900 to-black max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-10 lg:px-8 lg:flex lg:items-center lg:justify-between">
-      <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-        <span class="block">Contact</span>
-        <span class="block bg-clip-text text-transparent bg-gradient-to-r from-rose-500 to-orange-400 xl:inline">keep in touch.</span>
-      </h2>
-      <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
-
-        <a class="icon-social-media mr-2" href="https://wa.me/573158643093?text=">
-
-            <svg class="icon-social-media" width="35" height="35" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M35.5175 27.5815C35.424 27.5366 31.9247 25.8134 31.3029 25.5896C31.049 25.4985 30.777 25.4095 30.4878 25.4095C30.0153 25.4095 29.6183 25.6449 29.3091 26.1075C28.9596 26.6271 27.9014 27.864 27.5744 28.2335C27.5317 28.2823 27.4735 28.3406 27.4385 28.3406C27.4072 28.3406 26.8657 28.1176 26.7017 28.0464C22.9479 26.4158 20.0986 22.4946 19.7079 21.8333C19.6521 21.7382 19.6498 21.6951 19.6493 21.6951C19.663 21.6447 19.7892 21.5182 19.8544 21.4529C20.045 21.2643 20.2515 21.0158 20.4513 20.7753C20.5459 20.6614 20.6406 20.5473 20.7337 20.4398C21.0235 20.1025 21.1526 19.8407 21.3022 19.5374L21.3806 19.3799C21.7459 18.6541 21.4339 18.0416 21.333 17.8439C21.2503 17.6784 19.7727 14.1123 19.6156 13.7377C19.2379 12.8336 18.7387 12.4127 18.045 12.4127C17.9807 12.4127 18.045 12.4127 17.7751 12.4241C17.4464 12.4379 15.6566 12.6736 14.8652 13.1724C14.026 13.7015 12.6062 15.3881 12.6062 18.3541C12.6062 21.0235 14.3003 23.544 15.0276 24.5026C15.0457 24.5268 15.0789 24.5759 15.127 24.6463C17.9124 28.7141 21.3848 31.7288 24.9048 33.135C28.2937 34.4886 29.8984 34.6451 30.8107 34.6451H30.8109C31.1942 34.6451 31.5011 34.615 31.7718 34.5884L31.9435 34.572C33.1142 34.4682 35.6869 33.1351 36.2721 31.5089C36.7331 30.228 36.8546 28.8285 36.5479 28.3206C36.3379 27.9753 35.9758 27.8015 35.5175 27.5815Z" fill="#6EE7B7"/>
-              <path d="M24.426 0C11.4261 0 0.849938 10.4967 0.849938 23.3989C0.849938 27.5719 1.96672 31.6568 4.0823 35.2318L0.0330028 47.1765C-0.0424258 47.3992 0.0136781 47.6455 0.178405 47.8131C0.297314 47.9345 0.458613 48 0.62334 48C0.686457 48 0.750042 47.9905 0.812068 47.9707L13.2671 44.0129C16.6754 45.8339 20.5276 46.7952 24.4262 46.7952C37.4248 46.7953 48 36.2997 48 23.3989C48 10.4967 37.4248 0 24.426 0ZM24.426 41.9211C20.7576 41.9211 17.2045 40.8619 14.1503 38.8577C14.0476 38.7902 13.9284 38.7556 13.8084 38.7556C13.7449 38.7556 13.6814 38.7653 13.6195 38.7849L7.38027 40.7682L9.3944 34.826C9.45955 34.6337 9.42698 34.4216 9.30698 34.2577C6.98116 31.0797 5.7517 27.3249 5.7517 23.3989C5.7517 13.1844 14.129 4.87418 24.4259 4.87418C34.7216 4.87418 43.0979 13.1844 43.0979 23.3989C43.098 33.6122 34.7219 41.9211 24.426 41.9211Z" fill="#6EE7B7"/>
-              </svg>
-              
-
-        </a>
-
-        <a href="https://www.linkedin.com/in/keyla-carolina-conde-sánchez-32671a205">
-
-
-            <svg class="mr-2 icon-social-media" width="35" height="35" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M30.071 27.101V27.024C30.055 27.05 30.038 27.076 30.021 27.101H30.071Z" fill="#6EE7B7"/>
-              <path d="M49.265 4.66699H7.145C5.129 4.66699 3.494 6.26299 3.494 8.22999V50.843C3.494 52.809 5.129 54.405 7.145 54.405H49.265C51.284 54.405 52.919 52.808 52.919 50.843V8.22999C52.919 6.26199 51.283 4.66699 49.265 4.66699ZM18.475 46.304H11.01V23.845H18.475V46.304ZM14.743 20.777H14.693C12.189 20.777 10.569 19.052 10.569 16.897C10.569 14.694 12.239 13.017 14.792 13.017C17.346 13.017 18.917 14.694 18.967 16.897C18.967 19.052 17.345 20.777 14.743 20.777ZM45.394 46.304H37.929V34.286C37.929 31.268 36.849 29.208 34.148 29.208C32.086 29.208 30.858 30.597 30.317 31.939C30.12 32.418 30.072 33.088 30.072 33.76V46.303H22.607C22.607 46.303 22.705 25.949 22.607 23.844H30.072V27.023C31.064 25.493 32.838 23.314 36.801 23.314C41.712 23.314 45.395 26.525 45.395 33.424L45.394 46.304Z" fill="#6EE7B7"/>
-              </svg>
-              
-
-              
-        </a>
-
-        <a href="https://www.github.com/KeylaConde">
-
-
-            <svg class="icon-social-media" width="35" height="35" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_5_3)">
-              <path d="M20.9765 0.23077C9.51886 0.23077 0.230774 9.66638 0.230774 21.3056C0.230774 31.1345 6.85418 39.3913 15.814 41.7222C15.808 39.2866 15.8002 36.2992 15.7956 35.3685C9.80883 36.6911 8.54565 32.7891 8.54565 32.7891C7.56692 30.2622 6.15621 29.5901 6.15621 29.5901C4.20335 28.2333 6.30327 28.261 6.30327 28.261C8.46405 28.415 9.6023 30.514 9.6023 30.514C11.5215 33.8559 14.6366 32.8896 15.8647 32.3313C16.0579 30.9187 16.6153 29.9538 17.2312 29.408C12.4514 28.8552 7.42631 26.9807 7.42631 18.6041C7.42631 16.2174 8.2672 14.2673 9.64379 12.7363C9.4202 12.1854 8.6835 9.96189 9.85217 6.95053C9.85217 6.95053 11.6594 6.3632 15.7716 9.19153C17.4884 8.707 19.3293 8.46405 21.1581 8.45575C22.987 8.46405 24.8292 8.707 26.5492 9.19153C30.6569 6.3632 32.4613 6.95053 32.4613 6.95053C33.6327 9.96189 32.896 12.1854 32.6724 12.7363C34.0523 14.2673 34.8872 16.2174 34.8872 18.6041C34.8872 27.001 29.8529 28.8492 25.0606 29.3909C25.8324 30.0695 26.5202 31.3996 26.5202 33.4391C26.5202 35.0587 26.5128 38.7874 26.5059 41.6175C35.2776 39.1585 41.7222 30.999 41.7222 21.3056C41.7222 9.66638 32.4341 0.23077 20.9765 0.23077Z" fill="#6EE7B7"/>
-              </g>
-              <defs>
-              <clipPath id="clip0_5_3">
-              <rect width="42" height="42" fill="white"/>
-              </clipPath>
-              </defs>
-              </svg>
-              
-
-        </a>
-        
-      </div>
-    </div>
-  </div>
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> 
 </body>
-
 </html>
+
+

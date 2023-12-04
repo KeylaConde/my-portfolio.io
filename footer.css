@@ -1,0 +1,30 @@
+:root {
+    --black: #000000;
+    --darkest-green: #0d2818;
+    --darkgreen: #020202;
+    --gold: #ffd700;
+    --gray: #999;
+    --green: #16db65;
+    --green-transparent: rgba(22, 218, 100, 0.5);
+    --green-semioscuro: #058642;
+    --green-oscuro: #04471c;
+    --hospital-green: #ACD9B2;
+    --transparentWhite: rgba(247, 251, 252, 0.87);
+    --very-light-pink: #C7C7C7; 
+    --white: #ffffff;   
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    background: linear-gradient(to right, var(--white), var(--hospital-green));
+}
+
+svg:hover path {
+    fill: var(--gold);
+}
